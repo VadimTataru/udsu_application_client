@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>CovidApp_client</RootNamespace>
+    <RootNamespace>udsu_application_client</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="APIServices\" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>

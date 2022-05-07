@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidApp-client", "CovidApp-client\CovidApp-client.csproj", "{9045BA81-BEAE-4CD6-8170-393184E71C04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udsu-application-client", "udsu-application-client\udsu-application-client.csproj", "{E22ACC63-62FA-4317-8D87-B89FE6304D83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9045BA81-BEAE-4CD6-8170-393184E71C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9045BA81-BEAE-4CD6-8170-393184E71C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9045BA81-BEAE-4CD6-8170-393184E71C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9045BA81-BEAE-4CD6-8170-393184E71C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E22ACC63-62FA-4317-8D87-B89FE6304D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E22ACC63-62FA-4317-8D87-B89FE6304D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E22ACC63-62FA-4317-8D87-B89FE6304D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E22ACC63-62FA-4317-8D87-B89FE6304D83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AD6A2B2D-DC9B-41F9-88BA-709374BC218F}
+		SolutionGuid = {A3788FA1-797B-430B-BCC3-D39F82C20FA0}
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CovidApp_client
+namespace udsu_application_client
 {
     public class Program
     {

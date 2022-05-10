@@ -15,7 +15,7 @@ namespace udsu_application_client.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        public List<Country> Countries;
+        public List<Country> Countries = new List<Country>();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -24,11 +24,8 @@ namespace udsu_application_client.Controllers
 
         public IActionResult Index()
         {
-            if(Countries == null)
-            {
-                //Получить все страны https://localhost:44336/api/country
-                GetData();                
-            }
+            //Получить все страны https://localhost:44336/api/country
+            GetData();                
             ViewBag.CountryList = Countries;
 
             //Получить дефолтные данные о ковиде по России
@@ -58,11 +55,14 @@ namespace udsu_application_client.Controllers
 
         public void GetData()
         {
-            var request = new RequestToAPI("https://localhost:44336/api/country");
+            var request = new RequestToAPI("https://localhost:5001/api/country");
             request.RunGet();
             var response = request.Response;
-            var json = JArray.Parse(response);
-            Countries = JsonConvert.DeserializeObject<List<Country>>(json.ToString());
+            if (response != null)
+            {
+                var json = JArray.Parse(response);
+                Countries = JsonConvert.DeserializeObject<List<Country>>(json.ToString());
+            }
         }
     }
 }
